@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pagamento</title>
+</head>
+<body>
+  <h2>Processando pagamento...</h2>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const plano = urlParams.get('plano');
+    const tipo = urlParams.get('tipo');
+
+    // Aqui seria onde você geraria o link de pagamento real
+    // Para exemplo, simulamos com redirecionamento após 3s
+    setTimeout(() => {
+      window.location.href = `confirmacao.html?plano=${plano}&tipo=${tipo}`;
+    }, 3000);
+  </script>
+</body>
+</html>

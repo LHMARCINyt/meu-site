@@ -1,0 +1,98 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexlide</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: auto;">
+      <div style="display: flex; align-items: center;">
+        <img src="Official_Developer_Server-removebg-preview.png" alt="Logo Nexlide" style="height: 50px; margin-right: 10px;" />
+        <h1 style="margin: 0; color: #00bfff;">Nexlide</h1>
+      </div>
+      <nav>
+        <a href="painel-usuario.html">Painel do Usuário</a>
+        <a href="painel-admin.html">Painel de Administrador</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="planos-container">
+    <h2 class="titulo-planos">Planos Disponíveis</h2>
+    <div class="planos">
+      <div class="plano">
+        <h3>Starter</h3>
+        <p>✔ RAM: 512MB</p>
+        <p>✔ CPU: Intel Xeon 2.3GHz</p>
+        <p>✔ R$ 10,00/mês ou R$ 100,00/ano</p>
+        <button onclick="window.location.href='pagamento.html?plano=starter&tipo=mensal'">Assinar Mensal</button>
+        <button onclick="window.location.href='pagamento.html?plano=starter&tipo=anual'">Assinar Anual</button>
+      </div>
+      <div class="plano">
+        <h3>Pro</h3>
+        <p>RAM: 1GB</p>
+        <p>CPU: Intel Xeon 3.0GHz</p>
+        <p>R$ 20,00/mês ou R$ 200,00/ano</p>
+        <button onclick="window.location.href='pagamento.html?plano=pro&tipo=mensal'">Assinar Mensal</button>
+        <button onclick="window.location.href='pagamento.html?plano=pro&tipo=anual'">Assinar Anual</button>
+      </div>
+      <div class="plano">
+        <h3>Ultra</h3>
+        <p>RAM: 2GB</p>
+        <p>CPU: AMD EPYC 3.5GHz</p>
+        <p>R$ 35,00/mês ou R$ 350,00/ano</p>
+        <button onclick="window.location.href='pagamento.html?plano=ultra&tipo=mensal'">Assinar Mensal</button>
+        <button onclick="window.location.href='pagamento.html?plano=ultra&tipo=anual'">Assinar Anual</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="planos-container">
+    <h2 class="titulo-planos">Planos Profissionais</h2>
+    <div class="planos">
+      <div class="plano">
+        <h3 style="color: #ffffff;">Business</h3>
+        <p>✔ RAM: 4GB DDR4</p>
+        <p>✔ CPU: Intel Core i9 10900K</p>
+        <p>✔ GPU: NVIDIA GTX 1650 4GB</p>
+        <p>✔ Armazenamento: SSD NVMe de 100GB</p>
+        <p>✔ Excelente para bots com dashboards e uso de IA leve</p>
+        <p><strong>R$ 60,00/mês</strong> ou <strong>R$ 600,00/ano</strong></p>
+        <button onclick="window.location.href='pagamento.html?plano=business&tipo=mensal'">Assinar Mensal</button>
+        <button onclick="window.location.href='pagamento.html?plano=business&tipo=anual'">Assinar Anual</button>
+      </div>
+      <div class="plano">
+        <h3 style="color: #fcfcfc;">Enterprise</h3>
+        <p>✔ RAM: 8GB DDR4</p>
+        <p>✔ CPU: AMD Ryzen 7 5800X</p>
+        <p>✔ GPU: NVIDIA RTX 3060 12GB</p>
+        <p>✔ Armazenamento: SSD NVMe de 200GB</p>
+        <p>✔ Ideal para bots complexos, IA e múltiplos servidores</p>
+        <p><strong>R$ 120,00/mês</strong> ou <strong>R$ 1200,00/ano</strong></p>
+        <button onclick="window.location.href='pagamento.html?plano=enterprise&tipo=mensal'">Assinar Mensal</button>
+        <button onclick="window.location.href='pagamento.html?plano=enterprise&tipo=anual'">Assinar Anual</button>
+      </div>
+      <div class="plano">
+        <h3 style="color: #ffffff;">Master AI</h3>
+        <p>✔ RAM: 16GB DDR4</p>
+        <p>✔ CPU: AMD Ryzen 9 7950X</p>
+        <p>✔ GPU: NVIDIA RTX 4080 16GB</p>
+        <p>✔ Armazenamento: SSD NVMe de 500GB</p>
+        <p>✔ Ideal para IA, machine learning e automação avançada</p>
+        <p><strong>R$ 250,00/mês</strong> ou <strong>R$ 2500,00/ano</strong></p>
+        <button onclick="window.location.href='pagamento.html?plano=masterai&tipo=mensal'">Assinar Mensal</button>
+        <button onclick="window.location.href='pagamento.html?plano=masterai&tipo=anual'">Assinar Anual</button>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="site-footer">
+    <p>&copy; 2025 Nexlide. Todos os direitos reservados.</p>
+    <p>Criado por <strong>LHMARCINyt</strong></p>
+  </footer>
+</body>
+</html>

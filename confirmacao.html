@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Confirmação</title>
+</head>
+<body>
+  <h2>Pagamento confirmado!</h2>
+  <p>Seu plano foi ativado com sucesso.</p>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const plano = urlParams.get('plano');
+    const tipo = urlParams.get('tipo');
+
+    // Simula o armazenamento local para liberar o plano no painel do usuário
+    localStorage.setItem("plano_ativo", JSON.stringify({ plano, tipo }));
+
+    setTimeout(() => {
+      window.location.href = "painel-usuario.html";
+    }, 3000);
+  </script>
+</body>
+</html>

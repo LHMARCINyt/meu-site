@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel de Administrador</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="painel">
+    <h1>Painel de Administrador</h1>
+    <h3>Bem-vindo, <span style="color:#00bfff;">LHMARCINyt (CEO)</span></h3>
+
+    <label>Token de Admin: <input type="password" id="tokenInput"></label>
+    <button onclick="verificarToken()">Entrar</button>
+
+    <div id="adminArea" style="display:none; margin-top: 30px;">
+
+      <!-- Seção: Liberação de plano -->
+      <div class="adm-funcao">
+        <h4>Liberar Plano Gratuito</h4>
+        <input type="text" placeholder="ID do Usuário ou Nome" id="userGratis">
+        <select id="planoGratis">
+          <option value="starter">Starter</option>
+          <option value="pro">Pro</option>
+          <option value="ultra">Ultra</option>
+        </select>
+        <button onclick="liberarPlano()">Liberar</button>
+      </div>
+
+      <!-- Seção: Gerenciar token -->
+      <div class="adm-funcao">
+        <h4>Gerar Token de Acesso</h4>
+        <input type="text" id="nomeToken" placeholder="Nome do Usuário">
+        <button onclick="gerarToken()">Gerar Token</button>
+        <p id="tokenGerado" style="margin-top: 10px;"></p>
+      </div>
+      
+
+      <!-- Seção: Sistema de Blacklist -->
+      <div class="adm-funcao">
+        <h4>Blacklist / Banimento</h4>
+        <input type="text" placeholder="ID do Usuário" id="userBan">
+        <button onclick="banirUsuario()">Banir Usuário</button>
+      </div>
+
+      <!-- Seção: Gerenciar Cargos -->
+      <div class="adm-funcao">
+        <h4>Gerenciar Equipe</h4>
+        <input type="text" placeholder="ID ou Nome do Usuário" id="userCargo">
+        <select id="cargoUsuario">
+          <option value="ceo">CEO</option>
+          <option value="coo">COO</option>
+          <option value="admin">Administrador</option>
+          <option value="mod">Moderador</option>
+        </select>
+        <button onclick="atribuirCargo()">Atribuir Cargo</button>
+      </div>
+
+      <!-- Seção: Equipe -->
+      <div class="adm-funcao">
+        <h4>Equipe</h4>
+        <ul id="listaEquipe">
+          <li><strong>LHMARCINyt</strong> - CEO</li>
+          <li><strong>JoãoDev</strong> - COO</li>
+          <li><strong>MariaBot</strong> - Administrador</li>
+          <li><strong>Modzin</strong> - Moderador</li>
+        </ul>
+      </div>
+
+      <!-- Outras funções -->
+      <div class="adm-funcao">
+        <h4>Outras Ações</h4>
+        <button onclick="alert('Bot reiniciado!')">Reiniciar Bot Global</button>
+        <button onclick="alert('Logs do sistema baixados.')">Baixar Logs</button>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
